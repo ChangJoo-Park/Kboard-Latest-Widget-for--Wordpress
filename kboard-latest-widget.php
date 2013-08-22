@@ -26,7 +26,10 @@ class Kboard_Latest_Widget extends WP_Widget {
         $title = apply_filters('widget_title', $instance['title']);
         $board_code = empty($instance['board_code']) ? '&nbsp' : apply_filters('Kboard Latest Widget', $instance['board_code']);
 ?>
-        <div id="kboard-latest-widget"><?php echo do_shortcode( $board_code );?> </div>
+        <div id="kboard-latest-widget">
+            <?php echo $title; ?>
+            <?php echo do_shortcode( $board_code );?>
+        </div>
 <?php
     }
     public function form( $instance ) {
