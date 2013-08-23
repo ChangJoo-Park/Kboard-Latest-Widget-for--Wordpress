@@ -7,10 +7,6 @@ Version: 0.0.1
 Author: Chang Ju Park
 Author URI: http://parkcj.wordpress.com
 */
-
-?>
-
-<?php
 class Kboard_Latest_Widget extends WP_Widget {
     public function __construct() {
         // 생성자, 위젯이 실행되면 가장 먼저 처리된다. 
